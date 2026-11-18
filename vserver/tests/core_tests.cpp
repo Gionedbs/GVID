@@ -397,7 +397,9 @@ static void playback() {
         CHECK(ch.stats().ended);
     }
     {   // Decodifica lenta: l'uscita ripete, ma non salta nessun fotogramma.
-        FakeProvider p(240, 40);
+        // 400 ms per GOP: piu' lento dell'uscita anche quando Windows arrotonda
+        // l'attesa di 1 ms a circa 15 ms (12 campi x 15,6 ms = 187 ms per GOP).
+        FakeProvider p(240, 400);
         RecordingSink s;
         PlaybackChannel ch(p, s);
         ch.start();

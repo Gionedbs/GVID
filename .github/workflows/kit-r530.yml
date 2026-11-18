@@ -22,7 +22,7 @@ jobs:
       run:
         shell: pwsh
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: SQLite
         run: |
@@ -76,7 +76,7 @@ jobs:
           if ($falliti) { $falliti; throw 'Prove essenziali fallite' }
 
       - name: Pubblica il kit
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: kit-R530
           path: kit-R530
@@ -84,7 +84,7 @@ jobs:
 
       - name: Pubblica il rapporto della prova
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: rapporto-prove-ci
           path: rapporto_prove_ci.txt
