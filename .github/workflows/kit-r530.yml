@@ -65,6 +65,18 @@ jobs:
           Copy-Item "$env:FFMPEG_ROOT/LICENSE.txt" "$k/bin/FFmpeg-LICENSE.txt" -ErrorAction SilentlyContinue
           Get-ChildItem $k -Recurse -File | Select-Object FullName, Length | Format-Table -AutoSize
 
+      - name: Funzioni di sistema importate (compatibilita' con Windows 10 1607)
+        run: |
+          $vs = & "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -latest -property installationPath
+          $dumpbin = Get-ChildItem "$vs\VC\Tools\MSVC\*\bin\Hostx64\x64\dumpbin.exe" | Select-Object -First 1
+          foreach ($f in Get-ChildItem kit-R530/bin/*.dll, kit-R530/bin/record_smoke.exe) {
+            $cur = ''
+            & $dumpbin.FullName /nologo /imports $f.FullName | ForEach-Object {
+              if ($_ -match '^\s{4}(\S+\.dll)\s*$') { $cur = $Matches[1] }
+              elseif ($cur -and $_ -match '^\s+[0-9A-Fa-f]+\s+(\S+)\s*$') { "IMPORT $($f.Name) $cur $($Matches[1])" }
+            }
+          }
+
       - name: Pubblica il kit
         uses: actions/upload-artifact@v5
         with:
