@@ -12,7 +12,7 @@ permissions:
 
 env:
   SQLITE_URL: https://www.sqlite.org/2026/sqlite-amalgamation-3540100.zip
-  FFMPEG_ASSET: ffmpeg-n9.0-latest-win64-lgpl-shared-9.0.zip
+  FFMPEG_BRANCH: release/9.0
 
 jobs:
   kit:
@@ -32,18 +32,31 @@ jobs:
           New-Item -ItemType Directory -Force vserver/third_party/sqlite | Out-Null
           Copy-Item "$dir/sqlite3.c", "$dir/sqlite3.h" vserver/third_party/sqlite/
 
-      - name: FFmpeg (build LGPL shared)
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Sorgenti FFmpeg 9.0
         run: |
-          $rel = Invoke-RestMethod -Headers @{ Authorization = "Bearer $env:GH_TOKEN" } https://api.github.com/repos/BtbN/FFmpeg-Builds/releases/latest
-          $asset = $rel.assets | Where-Object name -eq $env:FFMPEG_ASSET | Select-Object -First 1
-          if (-not $asset) { throw "FFmpeg $env:FFMPEG_ASSET non trovato nella release BtbN" }
-          Invoke-WebRequest $asset.browser_download_url -OutFile ffmpeg.zip
-          Expand-Archive ffmpeg.zip -DestinationPath ffmpeg
-          $root = (Get-ChildItem ffmpeg -Directory | Select-Object -First 1).FullName -replace '\\', '/'
-          "FFMPEG_ROOT=$root" | Out-File -Append $env:GITHUB_ENV
-          Get-ChildItem "$root/lib/*.lib" | Select-Object -ExpandProperty Name
+          git clone --depth 1 --branch $env:FFMPEG_BRANCH https://github.com/FFmpeg/FFmpeg.git ffmpeg-src
+          $sha = git -C ffmpeg-src rev-parse HEAD
+          "FFMPEG_SHA=$sha" | Out-File -Append $env:GITHUB_ENV
+          "FFMPEG_ROOT=$($env:GITHUB_WORKSPACE -replace '\\', '/')/ffmpeg-msvc" | Out-File -Append $env:GITHUB_ENV
+
+      - name: FFmpeg gia' compilato
+        id: ffcache
+        uses: actions/cache@v4
+        with:
+          path: ffmpeg-msvc
+          key: ffmpeg-msvc-${{ env.FFMPEG_SHA }}-${{ hashFiles('vserver/tools/build-ffmpeg.sh') }}
+
+      - name: Compilazione FFmpeg con Visual Studio
+        if: steps.ffcache.outputs.cache-hit != 'true'
+        shell: cmd
+        env:
+          MSYS2_PATH_TYPE: inherit
+          CHERE_INVOKING: '1'
+        run: |
+          for /f "usebackq tokens=*" %%i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -latest -property installationPath`) do set VS=%%i
+          call "%VS%\VC\Auxiliary\Build\vcvars64.bat" || exit /b 1
+          C:\msys64\usr\bin\bash.exe -lc "pacman -S --noconfirm --needed make diffutils nasm" || exit /b 1
+          C:\msys64\usr\bin\bash.exe -lc "bash ./vserver/tools/build-ffmpeg.sh '%GITHUB_WORKSPACE%\ffmpeg-src' '%GITHUB_WORKSPACE%\ffmpeg-msvc'" || exit /b 1
 
       - name: Compilazione
         run: |
@@ -62,20 +75,21 @@ jobs:
             Copy-Item "build/Release/$f" "$k/bin"
           }
           Copy-Item build/Release/*.dll "$k/bin"
-          Copy-Item "$env:FFMPEG_ROOT/LICENSE.txt" "$k/bin/FFmpeg-LICENSE.txt" -ErrorAction SilentlyContinue
+          Copy-Item ffmpeg-src/COPYING.LGPLv2.1 "$k/bin/FFmpeg-LICENSE.txt"
+          "FFmpeg $env:FFMPEG_BRANCH, commit $env:FFMPEG_SHA, compilato con vserver/tools/build-ffmpeg.sh" | Out-File "$k/bin/FFmpeg-VERSIONE.txt"
           Get-ChildItem $k -Recurse -File | Select-Object FullName, Length | Format-Table -AutoSize
 
-      - name: Funzioni di sistema importate (compatibilita' con Windows 10 1607)
+      - name: Compatibilita' con Windows 10 1607 / Server 2016
         run: |
           $vs = & "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -latest -property installationPath
           $dumpbin = Get-ChildItem "$vs\VC\Tools\MSVC\*\bin\Hostx64\x64\dumpbin.exe" | Select-Object -First 1
-          foreach ($f in Get-ChildItem kit-R530/bin/*.dll, kit-R530/bin/record_smoke.exe) {
-            $cur = ''
-            & $dumpbin.FullName /nologo /imports $f.FullName | ForEach-Object {
-              if ($_ -match '^\s{4}(\S+\.dll)\s*$') { $cur = $Matches[1] }
-              elseif ($cur -and $_ -match '^\s+[0-9A-Fa-f]+\s+(\S+)\s*$') { "IMPORT $($f.Name) $cur $($Matches[1])" }
-            }
+          # Funzioni che su 1607 non sono esportate da KERNEL32 (o non esistono ancora).
+          $vietate = 'SetThreadDescription', 'GetThreadDescription', 'VirtualAlloc2', 'MapViewOfFile3', 'ProcessPrng'
+          $problemi = foreach ($f in Get-ChildItem kit-R530/bin/*.dll, kit-R530/bin/*.exe) {
+            & $dumpbin.FullName /nologo /imports $f.FullName | Where-Object { $_ -match '^\s+[0-9A-Fa-f]+\s+(\S+)\s*$' -and $vietate -contains $Matches[1] } | ForEach-Object { "$($f.Name): $($_.Trim())" }
           }
+          if ($problemi) { $problemi; throw 'Il kit importa funzioni non disponibili su Windows 10 1607' }
+          'Nessuna funzione incompatibile importata.'
 
       - name: Pubblica il kit
         uses: actions/upload-artifact@v5
