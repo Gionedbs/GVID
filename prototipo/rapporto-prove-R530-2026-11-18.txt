@@ -1,0 +1,94 @@
+Prove del 2026-11-18 17:42
+Macchina: Dell Inc. PowerEdge R530
+CPU: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz x 2, 24 thread
+Cartella di lavoro: E:\prove\prova-20261118-174233
+
+=== Disco: scrittura e lettura sequenziale di 2 GB ===
+  scrittura 31 MB/s, lettura 34 MB/s (servono circa 25 MB/s in scrittura e 13 in lettura)
+
+=== Logica di base ===
+  tutti i controlli superati
+  -> OK in 5 s
+
+=== Registrazione 4 canali, 120 s in tempo reale ===
+  percorso non valido -> apertura file: No such file or directory
+  ch1: catturati 3000 scritti 3000 persi 0 ripetuti 0 coda-max 7 salti-tc 0 ok=1 
+  ch2: catturati 3000 scritti 3000 persi 0 ripetuti 0 coda-max 8 salti-tc 0 ok=1 
+  ch3: catturati 3000 scritti 3000 persi 0 ripetuti 0 coda-max 7 salti-tc 0 ok=1 
+  ch4: catturati 3000 scritti 3000 persi 0 ripetuti 0 coda-max 7 salti-tc 1 ok=1 
+  durata 120.3 s per 3000 fotogrammi per canale (1.00x tempo reale)
+  ESITO: OK
+  -> OK in 120 s
+
+=== Registrazione 4 canali a velocita doppia ===
+  percorso non valido -> apertura file: No such file or directory
+  ch1: catturati 750 scritti 750 persi 604 ripetuti 604 coda-max 24 salti-tc 0 ok=1 
+  ch2: catturati 750 scritti 750 persi 601 ripetuti 601 coda-max 24 salti-tc 0 ok=1 
+  ch3: catturati 750 scritti 750 persi 599 ripetuti 599 coda-max 24 salti-tc 0 ok=1 
+  ch4: catturati 750 scritti 750 persi 605 ripetuti 605 coda-max 24 salti-tc 1 ok=1 
+  durata 27.9 s per 750 fotogrammi per canale (1.07x tempo reale)
+  ESITO: OK
+  -> OK in 28 s
+
+=== Registrazione 4 canali a velocita tripla ===
+  percorso non valido -> apertura file: No such file or directory
+  ch1: catturati 750 scritti 750 persi 648 ripetuti 648 coda-max 24 salti-tc 0 ok=1 
+  ch2: catturati 750 scritti 750 persi 651 ripetuti 651 coda-max 24 salti-tc 0 ok=1 
+  ch3: catturati 750 scritti 750 persi 648 ripetuti 648 coda-max 24 salti-tc 0 ok=1 
+  ch4: catturati 750 scritti 750 persi 648 ripetuti 648 coda-max 24 salti-tc 1 ok=1 
+  durata 28.6 s per 750 fotogrammi per canale (1.05x tempo reale)
+  ESITO: OK
+  -> OK in 29 s
+
+=== Riproduzione, rallenty e ricerca ===
+  clip registrata: scritti 750 persi 0 ok=1
+  uscita 2 inizio clip  cue 155.5 ms | fotogrammi  40 errati 0 | ripetuti 0 | audio   0 errori 0 | fine=1 
+  uscita 2 fine clip    cue 179.6 ms | fotogrammi  40 errati 0 | ripetuti 0 | audio  10 errori 0 | fine=1 
+  uscita 2 salto-d      cue 281.4 ms | fotogrammi  10 errati 0 | ripetuti 0 | audio   0 errori 0 | fine=0 
+  uscita 1 1x           cue 179.5 ms | fotogrammi 100 errati 0 | ripetuti 0 | audio 100 errori 0 | fine=0 
+  uscita 2 salto-c      cue 200.3 ms | fotogrammi  10 errati 0 | ripetuti 0 | audio  10 errori 0 | fine=0 
+  uscita 2 salto-b      cue 249.5 ms | fotogrammi  10 errati 0 | ripetuti 0 | audio  10 errori 0 | fine=0 
+  uscita 2 salto-a      cue 308.5 ms | fotogrammi  10 errati 0 | ripetuti 0 | audio  10 errori 0 | fine=0 
+  uscita 2 fermo        cue 226.3 ms | fotogrammi  25 errati 0 | ripetuti 0 | audio   0 errori 0 | fine=0 
+  uscita 1 0,5x         cue   0.0 ms | fotogrammi 100 errati 0 | ripetuti 0 | audio   0 errori 0 | fine=0 
+  uscita 2 -0,5x        cue 345.8 ms | fotogrammi 100 errati 0 | ripetuti 0 | audio   0 errori 0 | fine=0 
+  uscita 1 0,25x        cue 179.4 ms | fotogrammi 100 errati 0 | ripetuti 0 | audio   0 errori 0 | fine=0 
+  uscita 2 -1x          cue 272.6 ms | fotogrammi 100 errati 0 | ripetuti 0 | audio   0 errori 0 | fine=0 
+  uscita 1 2x           cue 186.4 ms | fotogrammi 100 errati 0 | ripetuti 0 | audio   0 errori 0 | fine=0 
+  uscita 2 2x           cue 196.4 ms | fotogrammi 100 errati 0 | ripetuti 0 | audio   0 errori 0 | fine=0 
+  uscita 1 -1x          cue 290.4 ms | fotogrammi 100 errati 0 | ripetuti 0 | audio   0 errori 0 | fine=0 
+  uscita 2 0,25x        cue 247.4 ms | fotogrammi 100 errati 0 | ripetuti 0 | audio   0 errori 0 | fine=0 
+  uscita 1 -0,5x        cue 303.4 ms | fotogrammi 100 errati 0 | ripetuti 0 | audio   0 errori 0 | fine=0 
+  uscita 1 fermo        cue   0.0 ms | fotogrammi  25 errati 0 | ripetuti 0 | audio   0 errori 0 | fine=0 
+  uscita 1 salto-a      cue 200.7 ms | fotogrammi  10 errati 0 | ripetuti 0 | audio  10 errori 0 | fine=0 
+  uscita 1 salto-b      cue 267.4 ms | fotogrammi  10 errati 0 | ripetuti 0 | audio  10 errori 0 | fine=0 
+  uscita 1 salto-c      cue 288.5 ms | fotogrammi  10 errati 0 | ripetuti 0 | audio  10 errori 0 | fine=0 
+  uscita 2 0,5x         cue 172.4 ms | fotogrammi 100 errati 0 | ripetuti 0 | audio   0 errori 0 | fine=0 
+  uscita 1 salto-d      cue 383.6 ms | fotogrammi  10 errati 0 | ripetuti 0 | audio   0 errori 0 | fine=0 
+  uscita 1 fine clip    cue 252.5 ms | fotogrammi  40 errati 0 | ripetuti 0 | audio  10 errori 0 | fine=1 
+  uscita 1 inizio clip  cue 150.4 ms | fotogrammi  40 errati 0 | ripetuti 0 | audio   0 errori 0 | fine=1 
+  uscita 2 1x           cue 236.6 ms | fotogrammi 100 errati 0 | ripetuti 0 | audio 100 errori 0 | fine=0 
+  ESITO: OK
+  -> OK in 63 s
+
+=== Flusso completo: catalogo e playlist ===
+  1. registrazione: 3 clip a catalogo
+  2. ricerca: nome, chiave, data, timecode
+  3. playlist salvata
+  4. catalogo riaperto, playlist ricaricata
+  5. riproduzione: attesi 203, corretti 203, errati 0, in piu 0, audio errati 0
+     tagli 4, tagli in ritardo 0, ripetizioni 1, dati in ritardo 0 
+  ESITO: OK
+  -> OK in 17 s
+
+=== RIEPILOGO ===
+Disco (almeno 3 volte il necessario)           INSUFFICIENTE
+Logica di base                                 OK
+Registrazione 4 canali, 120 s in tempo reale   OK
+Registrazione 4 canali a velocita doppia       OK
+Registrazione 4 canali a velocita tripla       OK
+Riproduzione, rallenty e ricerca               OK
+Flusso completo: catalogo e playlist           OK
+
+Le prove a velocita doppia e tripla misurano il margine: possono fallire senza che la macchina sia inadatta.
+I file di prova restano in E:\prove\prova-20261118-174233 e si possono cancellare a mano.

@@ -60,6 +60,13 @@ Conseguenze:
 - YouPlay ricava l'LTC dalla scheda AEC, non dalla scheda video. Una combinazione DeckLink + AEC è un'alternativa alla Corvid 88, da valutare. Va verificato come viene gestito il reference, perché non risulta un ingresso dedicato.
 - Con 2 slot liberi la Corvid 88 a basso profilo si può montare senza togliere le schede attuali, se uno dei due slot è x8.
 
+Prove con scheda simulata sull'R530 (18/11/2026, `prototipo/rapporto-prove-R530-2026-11-18.txt`):
+- Tutte le prove funzionali superate: registrazione, riproduzione e rallenty senza fotogrammi errati, catalogo e playlist.
+- Registrazione 4 canali in tempo reale per 120 s: nessun fotogramma perso, coda massima 8 su 24.
+- Alle velocita' 2x e 3x il sistema arriva a circa 1,05x il tempo reale. Il limite qui e' probabilmente il disco (SSD esterno a 31 MB/s, velocita' da USB 2.0), non la CPU: va rimisurato con USB 3.0 attivo.
+- Tempo di cue in riproduzione: 150-380 ms.
+- Con le DLL FFmpeg di build MinGW i programmi non partono su Windows 10 1607 (0xC0000139): FFmpeg va compilato con MSVC (`vserver/tools/build-ffmpeg.sh`).
+
 Dischi per le prove [N]: si usano SSD esterni USB, collegati alle porte USB 3.0 posteriori. I dischi originali YouPlay (SSD di sistema e volume media W:) restano intatti.
 - Fasi 1–2: Windows YouPlay esistente, cartella delle prove sull'SSD esterno.
 - Dalla fase 4: un Windows separato avviato da un SSD esterno, perché i driver Blackmagic e gli SDK aggiornati modificherebbero il sistema YouPlay.
