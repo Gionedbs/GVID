@@ -1,0 +1,6 @@
+build/
+vserver/third_party/sqlite/sqlite3.*
+kit-R530/
+*.zip
+*.mxf
+rapporto_prove*.txt

@@ -1,0 +1,1006 @@
+Inventario del 2026-11-18 14:07
+
+== Macchina ==
+Manufacturer              : Dell Inc.
+Model                     : PowerEdge R530
+NumberOfProcessors        : 2
+NumberOfLogicalProcessors : 24
+RAM_GB                    : 31,8
+SMBIOSBIOSVersion : 1.5.4
+ReleaseDate       : 05/10/2015 02:00:00
+
+== Sistema operativo ==
+Caption        : Microsoft Windows 10 Pro
+Version        : 10.0.14393
+OSArchitecture : 64 bit
+InstallDate    : 22/09/2016 04:09:25
+PowerShell: 5.1.14393.206
+
+== Processori ==
+SocketDesignation         : CPU1
+Name                      : Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz
+NumberOfCores             : 6
+NumberOfLogicalProcessors : 12
+MaxClockSpeed             : 2397
+
+SocketDesignation         : CPU2
+Name                      : Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz
+NumberOfCores             : 6
+NumberOfLogicalProcessors : 12
+MaxClockSpeed             : 2397
+
+== Memoria ==
+DeviceLocator : A1
+GB            : 8
+Speed         : 2133
+PartNumber    : HMA41GR7MFR8N-TF  
+
+DeviceLocator : A2
+GB            : 8
+Speed         : 2133
+PartNumber    : HMA41GR7MFR8N-TF  
+
+DeviceLocator : B1
+GB            : 8
+Speed         : 2133
+PartNumber    : HMA41GR7MFR8N-TF  
+
+DeviceLocator : B2
+GB            : 8
+Speed         : 2133
+PartNumber    : HMA41GR7MFR8N-TF
+
+== Dischi fisici (come li vede Windows; dietro un RAID sono dischi virtuali) ==
+Model         : ATA KINGSTON SV300S3 SCSI Disk Device
+InterfaceType : SCSI
+GB            : 112
+
+Model         : DELL PERC H330 Mini SCSI Disk Device
+InterfaceType : SCSI
+GB            : 5588
+
+== Volumi ==
+DeviceID   : C:
+VolumeName : WindowsSystem
+FileSystem : NTFS
+GB         : 105
+Liberi_GB  : 33
+
+DeviceID   : S:
+VolumeName : Setup
+FileSystem : NTFS
+GB         : 2
+Liberi_GB  : 1
+
+DeviceID   : W:
+VolumeName : HD-1 (MEDIA-RAID1)
+FileSystem : NTFS
+GB         : 5588
+Liberi_GB  : 2086
+
+== Controller dischi e RAID ==
+Name         : Iniziatore iSCSI Microsoft
+Manufacturer : Microsoft
+DriverName   : iScsiPrt
+
+Name         : Controller spazi di archiviazione Microsoft
+Manufacturer : Microsoft
+DriverName   : spaceport
+
+Name         : PERC H330 mini
+Manufacturer : DELL
+DriverName   : percsas3i
+
+== Schede video e grafiche ==
+Name          : Scheda video di base Microsoft
+DriverVersion : 10.0.14393.0
+RAM_MB        : 0
+
+Name          : NVIDIA NVS 300
+DriverVersion : 9.18.13.4195
+RAM_MB        : 512
+
+== Schede di rete ==
+Name                : Broadcom NetXtreme Gigabit Ethernet
+Speed               : 
+NetConnectionStatus : 4
+
+Name                : Broadcom NetXtreme Gigabit Ethernet #3
+Speed               : 1000000000
+NetConnectionStatus : 2
+
+Name                : Broadcom NetXtreme Gigabit Ethernet
+Speed               : 
+NetConnectionStatus : 4
+
+Name                : Broadcom NetXtreme Gigabit Ethernet
+Speed               : 
+NetConnectionStatus : 4
+
+== Slot di espansione ==
+SlotDesignation : PCIe Slot 1
+CurrentUsage    : 4
+Description     : Slot di sistema
+
+SlotDesignation : PCIe Slot 2
+CurrentUsage    : 3
+Description     : Slot di sistema
+
+SlotDesignation : PCIe Slot 3
+CurrentUsage    : 4
+Description     : Slot di sistema
+
+SlotDesignation : PCIe Slot 4
+CurrentUsage    : 4
+Description     : Slot di sistema
+
+SlotDesignation : PCIe Slot 5
+CurrentUsage    : 3
+Description     : Slot di sistema
+
+== Possibili schede video I/O (AJA, Blackmagic, Bluefish, Deltacast, Matrox, DekTec) ==
+Name         : Speakers (4- Blackmagic Audio)
+Manufacturer : Microsoft
+PNPDeviceID  : SWD\MMDEVAPI\{0.0.0.00000000}.{4732E017-4CAD-4AC7-8A89-656103C559A5}
+Status       : OK
+
+Name         : Blackmagic Audio
+Manufacturer : Blackmagic Design
+PNPDeviceID  : DECKLINK\AUDIO\7&187BBADB&0&0000
+Status       : OK
+
+Name         : Line In (3- Blackmagic Audio)
+Manufacturer : Microsoft
+PNPDeviceID  : SWD\MMDEVAPI\{0.0.1.00000000}.{15ECBE47-E567-4FE0-8F83-91459C3B2C32}
+Status       : OK
+
+Name         : Blackmagic DeckLink SDI
+Manufacturer : Blackmagic Design
+PNPDeviceID  : PCI\VEN_BDBD&DEV_A11B&SUBSYS_A11BBDBD&REV_00\6&9CFC018&0&0000000100000A3500
+Status       : OK
+
+Name         : Blackmagic DeckLink SDI
+Manufacturer : Blackmagic Design
+PNPDeviceID  : PCI\VEN_BDBD&DEV_A11B&SUBSYS_A11BBDBD&REV_00\6&2D5F1F77&0&0000000100000A3500
+Status       : OK
+
+Name         : Speakers (Blackmagic Audio)
+Manufacturer : Microsoft
+PNPDeviceID  : SWD\MMDEVAPI\{0.0.0.00000000}.{4EE45F7E-0A72-4C76-B717-53D1E65B72D2}
+Status       : OK
+
+Name         : Speakers (3- Blackmagic Audio)
+Manufacturer : Microsoft
+PNPDeviceID  : SWD\MMDEVAPI\{0.0.0.00000000}.{BF9B133E-59CA-45F9-A1B4-EE89AEF8CF1F}
+Status       : OK
+
+Name         : Blackmagic DeckLink WDM Streaming
+Manufacturer : Blackmagic Design
+PNPDeviceID  : DECKLINK\AVSTREAM\7&134871E0&0&0000
+Status       : OK
+
+Name         : Line In (2- Blackmagic Audio)
+Manufacturer : Microsoft
+PNPDeviceID  : SWD\MMDEVAPI\{0.0.1.00000000}.{B3488CD1-C280-439A-AC5B-6A7E67D7929C}
+Status       : OK
+
+Name         : Blackmagic DeckLink SDI
+Manufacturer : Blackmagic Design
+PNPDeviceID  : PCI\VEN_BDBD&DEV_A11B&SUBSYS_A11BBDBD&REV_00\6&1CAB5B39&0&0000000100000A3500
+Status       : OK
+
+Name         : Blackmagic Audio
+Manufacturer : Blackmagic Design
+PNPDeviceID  : DECKLINK\AUDIO\7&804A92A&0&0000
+Status       : OK
+
+Name         : Blackmagic DeckLink WDM Streaming
+Manufacturer : Blackmagic Design
+PNPDeviceID  : DECKLINK\AVSTREAM\7&15ABEBBB&0&0000
+Status       : OK
+
+Name         : Blackmagic DeckLink SDI
+Manufacturer : Blackmagic Design
+PNPDeviceID  : PCI\VEN_BDBD&DEV_A11B&SUBSYS_A11BBDBD&REV_00\0000000100000A3500
+Status       : OK
+
+Name         : Line In (4- Blackmagic Audio)
+Manufacturer : Microsoft
+PNPDeviceID  : SWD\MMDEVAPI\{0.0.1.00000000}.{41A88BCB-AB6C-493C-8DDC-4D2147AC2781}
+Status       : OK
+
+Name         : Speakers (2- Blackmagic Audio)
+Manufacturer : Microsoft
+PNPDeviceID  : SWD\MMDEVAPI\{0.0.0.00000000}.{BA5618CF-CE8D-4C1C-A28C-07EFDDD314FA}
+Status       : OK
+
+Name         : Blackmagic Audio
+Manufacturer : Blackmagic Design
+PNPDeviceID  : DECKLINK\AUDIO\7&134871E0&0&0000
+Status       : OK
+
+Name         : Blackmagic DeckLink WDM Streaming
+Manufacturer : Blackmagic Design
+PNPDeviceID  : DECKLINK\AVSTREAM\7&187BBADB&0&0000
+Status       : OK
+
+Name         : Blackmagic DeckLink WDM Streaming
+Manufacturer : Blackmagic Design
+PNPDeviceID  : DECKLINK\AVSTREAM\7&804A92A&0&0000
+Status       : OK
+
+Name         : Blackmagic Audio
+Manufacturer : Blackmagic Design
+PNPDeviceID  : DECKLINK\AUDIO\7&15ABEBBB&0&0000
+Status       : OK
+
+Name         : Line In (Blackmagic Audio)
+Manufacturer : Microsoft
+PNPDeviceID  : SWD\MMDEVAPI\{0.0.1.00000000}.{57E052E6-ACBC-42C2-A125-72AB586E2805}
+Status       : OK
+
+== Dispositivi PCI (elenco completo) ==
+Name         : AecPCIeTC Device (WDF Driver, 5,29,12)
+Manufacturer : AEC (PCIe-TC device) (WDF 5,29,12)
+PNPDeviceID  : PCI\VEN_AECB&DEV_6900&SUBSYS_2391197B&REV_30\4&3B5BF2AB&0&02E0
+
+Name         : Blackmagic DeckLink SDI
+Manufacturer : Blackmagic Design
+PNPDeviceID  : PCI\VEN_BDBD&DEV_A11B&SUBSYS_A11BBDBD&REV_00\6&2D5F1F77&0&0000000100000A3500
+
+Name         : Blackmagic DeckLink SDI
+Manufacturer : Blackmagic Design
+PNPDeviceID  : PCI\VEN_BDBD&DEV_A11B&SUBSYS_A11BBDBD&REV_00\6&1CAB5B39&0&0000000100000A3500
+
+Name         : Blackmagic DeckLink SDI
+Manufacturer : Blackmagic Design
+PNPDeviceID  : PCI\VEN_BDBD&DEV_A11B&SUBSYS_A11BBDBD&REV_00\6&9CFC018&0&0000000100000A3500
+
+Name         : Blackmagic DeckLink SDI
+Manufacturer : Blackmagic Design
+PNPDeviceID  : PCI\VEN_BDBD&DEV_A11B&SUBSYS_A11BBDBD&REV_00\0000000100000A3500
+
+Name         : Bridge da PCI Express a PCI/PCI-X
+Manufacturer : (Periferiche standard di sistema)
+PNPDeviceID  : PCI\VEN_1912&DEV_001A&SUBSYS_001A1912&REV_00\6&16214B60&0&000000E1
+
+Name         : Broadcom NetXtreme Gigabit Ethernet
+Manufacturer : Broadcom Corporation
+PNPDeviceID  : PCI\VEN_14E4&DEV_165F&SUBSYS_06391028&REV_00\00001418775AFF5A01
+
+Name         : Broadcom NetXtreme Gigabit Ethernet #2
+Manufacturer : Broadcom Corporation
+PNPDeviceID  : PCI\VEN_14E4&DEV_165F&SUBSYS_06391028&REV_00\00001418775AFF5801
+
+Name         : Broadcom NetXtreme Gigabit Ethernet #3
+Manufacturer : Broadcom Corporation
+PNPDeviceID  : PCI\VEN_14E4&DEV_165F&SUBSYS_06391028&REV_00\00001418775AFF5700
+
+Name         : Broadcom NetXtreme Gigabit Ethernet #4
+Manufacturer : Broadcom Corporation
+PNPDeviceID  : PCI\VEN_14E4&DEV_165F&SUBSYS_06391028&REV_00\00001418775AFF5900
+
+Name         : Controller AHCI SATA standard
+Manufacturer : Controller AHCI SATA standard
+PNPDeviceID  : PCI\VEN_8086&DEV_8D02&SUBSYS_063A1028&REV_05\3&3259BAD1&0&FA
+
+Name         : Controller AHCI SATA standard
+Manufacturer : Controller AHCI SATA standard
+PNPDeviceID  : PCI\VEN_8086&DEV_8D62&SUBSYS_063A1028&REV_05\3&3259BAD1&0&8C
+
+Name         : Controller host standard avanzato da PCI a USB
+Manufacturer : (Controller host USB standard)
+PNPDeviceID  : PCI\VEN_8086&DEV_8D2D&SUBSYS_063A1028&REV_05\3&3259BAD1&0&D0
+
+Name         : Controller host standard avanzato da PCI a USB
+Manufacturer : (Controller host USB standard)
+PNPDeviceID  : PCI\VEN_8086&DEV_8D26&SUBSYS_063A1028&REV_05\3&3259BAD1&0&E8
+
+Name         : Controller per High Definition Audio
+Manufacturer : Microsoft
+PNPDeviceID  : PCI\VEN_10DE&DEV_0BE3&SUBSYS_086310DE&REV_A1\4&4F1500D&0&0118
+
+Name         : Intel RSTe Device - 2F9C
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F9C&SUBSYS_2F9C8086&REV_02\3&103A9D54&0&F4
+
+Name         : Intel RSTe Device - 2F9C
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F9C&SUBSYS_2F9C8086&REV_02\3&1C6B4348&0&F4
+
+Name         : Intel(R) C610 series/X99 chipset LPC Controller - 8D44
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_8D44&SUBSYS_063A1028&REV_05\3&3259BAD1&0&F8
+
+Name         : Intel(R) C610 series/X99 Chipset Management Engine Interface - 8D3B
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_8D3B&SUBSYS_063A1028&REV_05\3&3259BAD1&0&B1
+
+Name         : Intel(R) C610 series/X99 chipset PCI Express Root Port #1 - 8D10
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_8D10&SUBSYS_063A1028&REV_D5\3&3259BAD1&0&E0
+
+Name         : Intel(R) C610 series/X99 chipset PCI Express Root Port #2 - 8D12
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_8D12&SUBSYS_063A1028&REV_D5\3&3259BAD1&0&E1
+
+Name         : Intel(R) C610 series/X99 chipset PCI Express Root Port #3 - 8D14
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_8D14&SUBSYS_063A1028&REV_D5\3&3259BAD1&0&E2
+
+Name         : Intel(R) C610 series/X99 chipset PCI Express Root Port #4 - 8D16
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_8D16&SUBSYS_063A1028&REV_D5\3&3259BAD1&0&E3
+
+Name         : Intel(R) C610 series/X99 chipset PCI Express Root Port #5 - 8D18
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_8D18&SUBSYS_063A1028&REV_D5\3&3259BAD1&0&E4
+
+Name         : Intel(R) C610 series/X99 chipset SPSR - 8D7C
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_8D7C&SUBSYS_063A1028&REV_05\3&3259BAD1&0&88
+
+Name         : Intel(R) Management Engine Interface 
+Manufacturer : Intel
+PNPDeviceID  : PCI\VEN_8086&DEV_8D3A&SUBSYS_063A1028&REV_05\3&3259BAD1&0&B0
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Address Map VTd_Misc System Management - 2F28
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F28&SUBSYS_00000000&REV_02\3&1FA00A2C&0&28
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Address Map VTd_Misc System Management - 2F28
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F28&SUBSYS_00000000&REV_02\3&3259BAD1&0&28
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Buffered Ring Agent - 2FF8
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FF8&SUBSYS_00000000&REV_02\3&103A9D54&0&78
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Buffered Ring Agent - 2FF8
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FF8&SUBSYS_00000000&REV_02\3&1C6B4348&0&78
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Buffered Ring Agent - 2FF9
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FF9&SUBSYS_00000000&REV_02\3&103A9D54&0&79
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Buffered Ring Agent - 2FF9
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FF9&SUBSYS_00000000&REV_02\3&1C6B4348&0&79
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 0 & 1 - 2FBC
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FBC&SUBSYS_00000000&REV_02\3&103A9D54&0&A4
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 0 & 1 - 2FBC
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FBC&SUBSYS_00000000&REV_02\3&1C6B4348&0&A4
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 0 & 1 - 2FBD
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FBD&SUBSYS_00000000&REV_02\3&103A9D54&0&A5
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 0 & 1 - 2FBD
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FBD&SUBSYS_00000000&REV_02\3&1C6B4348&0&A5
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 0 & 1 - 2FBE
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FBE&SUBSYS_00000000&REV_02\3&1C6B4348&0&A6
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 0 & 1 - 2FBE
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FBE&SUBSYS_00000000&REV_02\3&103A9D54&0&A6
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 0 & 1 - 2FBF
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FBF&SUBSYS_00000000&REV_02\3&1C6B4348&0&A7
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 0 & 1 - 2FBF
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FBF&SUBSYS_00000000&REV_02\3&103A9D54&0&A7
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 2 & 3 - 2FB8
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB8&SUBSYS_00000000&REV_02\3&1C6B4348&0&BC
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 2 & 3 - 2FB8
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB8&SUBSYS_00000000&REV_02\3&103A9D54&0&BC
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 2 & 3 - 2FB9
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB9&SUBSYS_00000000&REV_02\3&103A9D54&0&BD
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 2 & 3 - 2FB9
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB9&SUBSYS_00000000&REV_02\3&1C6B4348&0&BD
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 2 & 3 - 2FBA
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FBA&SUBSYS_00000000&REV_02\3&1C6B4348&0&BE
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 2 & 3 - 2FBA
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FBA&SUBSYS_00000000&REV_02\3&103A9D54&0&BE
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 2 & 3 - 2FBB
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FBB&SUBSYS_00000000&REV_02\3&103A9D54&0&BF
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO (VMSE) 2 & 3 - 2FBB
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FBB&SUBSYS_00000000&REV_02\3&1C6B4348&0&BF
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO Channel 0/1 Broadcast - 2FAE
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FAE&SUBSYS_00000000&REV_02\3&1C6B4348&0&9E
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO Channel 0/1 Broadcast - 2FAE
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FAE&SUBSYS_00000000&REV_02\3&103A9D54&0&9E
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO Channel 2/3 Broadcast - 2F6E
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F6E&SUBSYS_00000000&REV_02\3&1C6B4348&0&B6
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO Channel 2/3 Broadcast - 2F6E
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F6E&SUBSYS_00000000&REV_02\3&103A9D54&0&B6
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO Global Broadcast - 2F6F
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F6F&SUBSYS_00000000&REV_02\3&1C6B4348&0&B7
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO Global Broadcast - 2F6F
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F6F&SUBSYS_00000000&REV_02\3&103A9D54&0&B7
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO Global Broadcast - 2FAF
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FAF&SUBSYS_00000000&REV_02\3&1C6B4348&0&9F
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DDRIO Global Broadcast - 2FAF
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FAF&SUBSYS_00000000&REV_02\3&103A9D54&0&9F
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 DMI2 - 2F00
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F00&SUBSYS_00008086&REV_02\3&3259BAD1&0&00
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Home Agent 0 - 2F30
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F30&SUBSYS_2F308086&REV_02\3&1C6B4348&0&91
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Home Agent 0 - 2F30
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F30&SUBSYS_2F308086&REV_02\3&103A9D54&0&91
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Home Agent 0 - 2FA0
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FA0&SUBSYS_2FA08086&REV_02\3&1C6B4348&0&90
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Home Agent 0 - 2FA0
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FA0&SUBSYS_2FA08086&REV_02\3&103A9D54&0&90
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Home Agent 0 Debug - 2F70
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F70&SUBSYS_2F708086&REV_02\3&1C6B4348&0&92
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Home Agent 0 Debug - 2F70
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F70&SUBSYS_2F708086&REV_02\3&103A9D54&0&92
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Hot Plug - 2F29
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F29&SUBSYS_00000000&REV_02\3&1FA00A2C&0&29
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Hot Plug - 2F29
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F29&SUBSYS_00000000&REV_02\3&3259BAD1&0&29
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 I/O APIC - 2F2C
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F2C&SUBSYS_00008086&REV_02\3&3259BAD1&0&2C
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 I/O APIC - 2F2C
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F2C&SUBSYS_00008086&REV_02\3&1FA00A2C&0&2C
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 0 ERROR Registers - 
+               2FB2
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB2&SUBSYS_2FB28086&REV_02\3&1C6B4348&0&A2
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 0 ERROR Registers - 
+               2FB2
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB2&SUBSYS_2FB28086&REV_02\3&103A9D54&0&A2
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 0 Thermal Control - 
+               2FB0
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB0&SUBSYS_2FB08086&REV_02\3&103A9D54&0&A0
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 0 Thermal Control - 
+               2FB0
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB0&SUBSYS_2FB08086&REV_02\3&1C6B4348&0&A0
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 1 ERROR Registers - 
+               2FB3
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB3&SUBSYS_2FB38086&REV_02\3&103A9D54&0&A3
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 1 ERROR Registers - 
+               2FB3
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB3&SUBSYS_2FB38086&REV_02\3&1C6B4348&0&A3
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 1 Thermal Control - 
+               2FB1
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB1&SUBSYS_2FB18086&REV_02\3&103A9D54&0&A1
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 1 Thermal Control - 
+               2FB1
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB1&SUBSYS_2FB18086&REV_02\3&1C6B4348&0&A1
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 2 ERROR Registers - 
+               2FB6
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB6&SUBSYS_2FB68086&REV_02\3&1C6B4348&0&AA
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 2 ERROR Registers - 
+               2FB6
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB6&SUBSYS_2FB68086&REV_02\3&103A9D54&0&AA
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 2 Thermal Control - 
+               2FB4
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB4&SUBSYS_2FB48086&REV_02\3&1C6B4348&0&A8
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 2 Thermal Control - 
+               2FB4
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB4&SUBSYS_2FB48086&REV_02\3&103A9D54&0&A8
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 3 ERROR Registers - 
+               2FB7
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB7&SUBSYS_2FB78086&REV_02\3&103A9D54&0&AB
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 3 ERROR Registers - 
+               2FB7
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB7&SUBSYS_2FB78086&REV_02\3&1C6B4348&0&AB
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 3 Thermal Control - 
+               2FB5
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB5&SUBSYS_2FB58086&REV_02\3&1C6B4348&0&A9
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel 3 Thermal Control - 
+               2FB5
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FB5&SUBSYS_2FB58086&REV_02\3&103A9D54&0&A9
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address 
+               Decoder - 2FAA
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FAA&SUBSYS_2FAA8086&REV_02\3&103A9D54&0&9A
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address 
+               Decoder - 2FAA
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FAA&SUBSYS_2FAA8086&REV_02\3&1C6B4348&0&9A
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address 
+               Decoder - 2FAB
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FAB&SUBSYS_2FAB8086&REV_02\3&1C6B4348&0&9B
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address 
+               Decoder - 2FAB
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FAB&SUBSYS_2FAB8086&REV_02\3&103A9D54&0&9B
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address 
+               Decoder - 2FAC
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FAC&SUBSYS_2FAC8086&REV_02\3&103A9D54&0&9C
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address 
+               Decoder - 2FAC
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FAC&SUBSYS_2FAC8086&REV_02\3&1C6B4348&0&9C
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address 
+               Decoder - 2FAD
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FAD&SUBSYS_2FAD8086&REV_02\3&103A9D54&0&9D
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address 
+               Decoder - 2FAD
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FAD&SUBSYS_2FAD8086&REV_02\3&1C6B4348&0&9D
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Target Address / Thermal / 
+               RAS Registers - 2F71
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F71&SUBSYS_2F718086&REV_02\3&1C6B4348&0&99
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Target Address / Thermal / 
+               RAS Registers - 2F71
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F71&SUBSYS_2F718086&REV_02\3&103A9D54&0&99
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Target Address / Thermal / 
+               RAS Registers - 2FA8
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FA8&SUBSYS_2FA88086&REV_02\3&103A9D54&0&98
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 0 Target Address / Thermal / 
+               RAS Registers - 2FA8
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FA8&SUBSYS_2FA88086&REV_02\3&1C6B4348&0&98
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel 0 Thermal Control - 
+               2FD0
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FD0&SUBSYS_00000000&REV_02\3&1C6B4348&0&B8
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Channel 0 Thermal Control - 
+               2FD0
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FD0&SUBSYS_00000000&REV_02\3&103A9D54&0&B8
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Target Address / Thermal / 
+               RAS Registers - 2F68
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F68&SUBSYS_00000000&REV_02\3&103A9D54&0&B0
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Integrated Memory Controller 1 Target Address / Thermal / 
+               RAS Registers - 2F68
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F68&SUBSYS_00000000&REV_02\3&1C6B4348&0&B0
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 PCI Express Root Port 1 - 2F02
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F02&SUBSYS_00008086&REV_02\3&3259BAD1&0&08
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 PCI Express Root Port 2 - 2F04
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F04&SUBSYS_00008086&REV_02\3&3259BAD1&0&10
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 PCI Express Root Port 2 - 2F04
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F04&SUBSYS_00008086&REV_02\3&1FA00A2C&0&10
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 PCI Express Root Port 2 - 2F06
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F06&SUBSYS_00008086&REV_02\3&1FA00A2C&0&12
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 PCI Express Root Port 3 - 2F08
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F08&SUBSYS_00008086&REV_02\3&3259BAD1&0&18
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 PCIe Ring Interface - 2F1D
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F1D&SUBSYS_2F1D8086&REV_02\3&103A9D54&0&80
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 PCIe Ring Interface - 2F1D
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F1D&SUBSYS_2F1D8086&REV_02\3&1C6B4348&0&80
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 PCIe Ring Interface - 2F34
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F34&SUBSYS_2F348086&REV_02\3&1C6B4348&0&81
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 PCIe Ring Interface - 2F34
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F34&SUBSYS_2F348086&REV_02\3&103A9D54&0&81
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Power Control Unit - 2F98
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F98&SUBSYS_2F988086&REV_02\3&103A9D54&0&F0
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Power Control Unit - 2F98
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F98&SUBSYS_2F988086&REV_02\3&1C6B4348&0&F0
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Power Control Unit - 2F99
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F99&SUBSYS_2F998086&REV_02\3&1C6B4348&0&F1
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Power Control Unit - 2F99
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F99&SUBSYS_2F998086&REV_02\3&103A9D54&0&F1
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Power Control Unit - 2F9A
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F9A&SUBSYS_2F9A8086&REV_02\3&103A9D54&0&F2
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Power Control Unit - 2F9A
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F9A&SUBSYS_2F9A8086&REV_02\3&1C6B4348&0&F2
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Power Control Unit - 2FC0
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FC0&SUBSYS_2FC08086&REV_02\3&103A9D54&0&F3
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Power Control Unit - 2FC0
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FC0&SUBSYS_2FC08086&REV_02\3&1C6B4348&0&F3
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 QPI Link 0 - 2F32
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F32&SUBSYS_2F328086&REV_02\3&103A9D54&0&42
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 QPI Link 0 - 2F32
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F32&SUBSYS_2F328086&REV_02\3&1C6B4348&0&42
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 QPI Link 0 - 2F80
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F80&SUBSYS_2F808086&REV_02\3&1C6B4348&0&40
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 QPI Link 0 - 2F80
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F80&SUBSYS_2F808086&REV_02\3&103A9D54&0&40
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 QPI Link 0 - 2F83
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F83&SUBSYS_2F838086&REV_02\3&103A9D54&0&43
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 QPI Link 0 - 2F83
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F83&SUBSYS_2F838086&REV_02\3&1C6B4348&0&43
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 QPI Link 1 - 2F33
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F33&SUBSYS_2F338086&REV_02\3&103A9D54&0&4A
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 QPI Link 1 - 2F33
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F33&SUBSYS_2F338086&REV_02\3&1C6B4348&0&4A
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 QPI Link 1 - 2F90
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F90&SUBSYS_2F908086&REV_02\3&1C6B4348&0&48
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 QPI Link 1 - 2F90
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F90&SUBSYS_2F908086&REV_02\3&103A9D54&0&48
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 QPI Link 1 - 2F93
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F93&SUBSYS_2F938086&REV_02\3&1C6B4348&0&4B
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 QPI Link 1 - 2F93
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F93&SUBSYS_2F938086&REV_02\3&103A9D54&0&4B
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring - 2F36
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F36&SUBSYS_2F368086&REV_02\3&1C6B4348&0&59
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring - 2F36
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F36&SUBSYS_2F368086&REV_02\3&103A9D54&0&59
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring - 2F37
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F37&SUBSYS_2F378086&REV_02\3&1C6B4348&0&5A
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring - 2F37
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F37&SUBSYS_2F378086&REV_02\3&103A9D54&0&5A
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring - 2F81
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F81&SUBSYS_2F818086&REV_02\3&103A9D54&0&58
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring - 2F81
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F81&SUBSYS_2F818086&REV_02\3&1C6B4348&0&58
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 RAS Control Status and Global Errors - 2F2A
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F2A&SUBSYS_00000000&REV_02\3&1FA00A2C&0&2A
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 RAS Control Status and Global Errors - 2F2A
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F2A&SUBSYS_00000000&REV_02\3&3259BAD1&0&2A
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Scratchpad & Semaphore Registers - 2F1E
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F1E&SUBSYS_2F1E8086&REV_02\3&1C6B4348&0&85
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Scratchpad & Semaphore Registers - 2F1E
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F1E&SUBSYS_2F1E8086&REV_02\3&103A9D54&0&85
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Scratchpad & Semaphore Registers - 2F1F
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F1F&SUBSYS_2F1F8086&REV_02\3&1C6B4348&0&87
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Scratchpad & Semaphore Registers - 2F1F
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F1F&SUBSYS_2F1F8086&REV_02\3&103A9D54&0&87
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Scratchpad & Semaphore Registers - 2F7D
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F7D&SUBSYS_2F7D8086&REV_02\3&1C6B4348&0&86
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Scratchpad & Semaphore Registers - 2F7D
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F7D&SUBSYS_2F7D8086&REV_02\3&103A9D54&0&86
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 System Address Decoder & Broadcast Registers - 2FFC
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FFC&SUBSYS_2FE08086&REV_02\3&1C6B4348&0&7C
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 System Address Decoder & Broadcast Registers - 2FFC
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FFC&SUBSYS_2FE08086&REV_02\3&103A9D54&0&7C
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 System Address Decoder & Broadcast Registers - 2FFD
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FFD&SUBSYS_2FE08086&REV_02\3&1C6B4348&0&7D
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 System Address Decoder & Broadcast Registers - 2FFD
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FFD&SUBSYS_2FE08086&REV_02\3&103A9D54&0&7D
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 System Address Decoder & Broadcast Registers - 2FFE
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FFE&SUBSYS_2FE08086&REV_02\3&1C6B4348&0&7E
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 System Address Decoder & Broadcast Registers - 2FFE
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FFE&SUBSYS_2FE08086&REV_02\3&103A9D54&0&7E
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE0
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FE0&SUBSYS_2FE08086&REV_02\3&103A9D54&0&60
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE0
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FE0&SUBSYS_2FE08086&REV_02\3&1C6B4348&0&60
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE1
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FE1&SUBSYS_2FE18086&REV_02\3&1C6B4348&0&61
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE1
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FE1&SUBSYS_2FE18086&REV_02\3&103A9D54&0&61
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE2
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FE2&SUBSYS_2FE28086&REV_02\3&1C6B4348&0&62
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE2
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FE2&SUBSYS_2FE28086&REV_02\3&103A9D54&0&62
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE3
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FE3&SUBSYS_2FE38086&REV_02\3&103A9D54&0&63
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE3
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FE3&SUBSYS_2FE38086&REV_02\3&1C6B4348&0&63
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE4
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FE4&SUBSYS_2FE48086&REV_02\3&1C6B4348&0&64
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE4
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FE4&SUBSYS_2FE48086&REV_02\3&103A9D54&0&64
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE5
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FE5&SUBSYS_2FE58086&REV_02\3&1C6B4348&0&65
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 Unicast Registers - 2FE5
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2FE5&SUBSYS_2FE58086&REV_02\3&103A9D54&0&65
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 VCU - 2F88
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F88&SUBSYS_00000000&REV_02\3&1C6B4348&0&F8
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 VCU - 2F88
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F88&SUBSYS_00000000&REV_02\3&103A9D54&0&F8
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 VCU - 2F8A
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F8A&SUBSYS_00000000&REV_02\3&1C6B4348&0&FA
+
+Name         : Intel(R) Xeon(R) E7 v3/Xeon(R) E5 v3/Core i7 VCU - 2F8A
+Manufacturer : INTEL
+PNPDeviceID  : PCI\VEN_8086&DEV_2F8A&SUBSYS_00000000&REV_02\3&103A9D54&0&FA
+
+Name         : NVIDIA NVS 300
+Manufacturer : NVIDIA
+PNPDeviceID  : PCI\VEN_10DE&DEV_10D8&SUBSYS_086310DE&REV_A2\4&4F1500D&0&0018
+
+Name         : PERC H330 mini
+Manufacturer : DELL
+PNPDeviceID  : PCI\VEN_1000&DEV_005F&SUBSYS_1F4B1028&REV_02\4&1DE6EEFC&0&0008
+
+Name         : Periferica sistema di base
+Manufacturer : 
+PNPDeviceID  : PCI\VEN_AECB&DEV_2394&SUBSYS_2394197B&REV_30\4&3B5BF2AB&0&04E0
+
+Name         : Periferica sistema di base
+Manufacturer : 
+PNPDeviceID  : PCI\VEN_AECB&DEV_2393&SUBSYS_2393197B&REV_30\4&3B5BF2AB&0&03E0
+
+Name         : Periferica sistema di base
+Manufacturer : 
+PNPDeviceID  : PCI\VEN_AECB&DEV_2392&SUBSYS_2392197B&REV_30\4&3B5BF2AB&0&00E0
+
+Name         : Porta di commutazione downstream PCI Express
+Manufacturer : (Periferiche standard di sistema)
+PNPDeviceID  : PCI\VEN_12D8&DEV_0508&SUBSYS_00000000&REV_01\5&B1D0E9F&0&080010
+
+Name         : Porta di commutazione downstream PCI Express
+Manufacturer : (Periferiche standard di sistema)
+PNPDeviceID  : PCI\VEN_1912&DEV_001D&SUBSYS_001D1912&REV_00\5&6208EAE&0&0000E1
+
+Name         : Porta di commutazione downstream PCI Express
+Manufacturer : (Periferiche standard di sistema)
+PNPDeviceID  : PCI\VEN_12D8&DEV_0508&SUBSYS_00000000&REV_01\5&B1D0E9F&0&200010
+
+Name         : Porta di commutazione downstream PCI Express
+Manufacturer : (Periferiche standard di sistema)
+PNPDeviceID  : PCI\VEN_12D8&DEV_0508&SUBSYS_00000000&REV_01\5&B1D0E9F&0&180010
+
+Name         : Porta di commutazione downstream PCI Express
+Manufacturer : (Periferiche standard di sistema)
+PNPDeviceID  : PCI\VEN_12D8&DEV_0508&SUBSYS_00000000&REV_01\5&B1D0E9F&0&100010
+
+Name         : Porta di commutazione upstream PCI Express
+Manufacturer : (Periferiche standard di sistema)
+PNPDeviceID  : PCI\VEN_1912&DEV_001D&SUBSYS_001D1912&REV_00\4&23C4EE0&0&00E1
+
+Name         : Porta di commutazione upstream PCI Express
+Manufacturer : (Periferiche standard di sistema)
+PNPDeviceID  : PCI\VEN_12D8&DEV_0508&SUBSYS_00000000&REV_01\4&39CDA168&0&0010
+
+Name         : Scheda video di base Microsoft
+Manufacturer : (Schede video standard)
+PNPDeviceID  : PCI\VEN_102B&DEV_0534&SUBSYS_063A1028&REV_01\7&387C0DBE&0&00000000E1
+
+== Dispositivi con problemi o senza driver ==
+Name                   : Broadcom NetXtreme Gigabit Ethernet #2
+PNPDeviceID            : PCI\VEN_14E4&DEV_165F&SUBSYS_06391028&REV_00\00001418775AFF5801
+ConfigManagerErrorCode : 22
+
+Name                   : Broadcom NetXtreme Gigabit Ethernet #4
+PNPDeviceID            : PCI\VEN_14E4&DEV_165F&SUBSYS_06391028&REV_00\00001418775AFF5900
+ConfigManagerErrorCode : 22
+
+Name                   : Broadcom NetXtreme Gigabit Ethernet
+PNPDeviceID            : PCI\VEN_14E4&DEV_165F&SUBSYS_06391028&REV_00\00001418775AFF5A01
+ConfigManagerErrorCode : 22
+
+Name                   : Periferica sistema di base
+PNPDeviceID            : PCI\VEN_AECB&DEV_2392&SUBSYS_2392197B&REV_30\4&3B5BF2AB&0&00E0
+ConfigManagerErrorCode : 28
+
+Name                   : Periferica sistema di base
+PNPDeviceID            : PCI\VEN_AECB&DEV_2393&SUBSYS_2393197B&REV_30\4&3B5BF2AB&0&03E0
+ConfigManagerErrorCode : 28
+
+Name                   : Periferica sistema di base
+PNPDeviceID            : PCI\VEN_AECB&DEV_2394&SUBSYS_2394197B&REV_30\4&3B5BF2AB&0&04E0
+ConfigManagerErrorCode : 28

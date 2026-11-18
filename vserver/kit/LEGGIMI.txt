@@ -1,0 +1,26 @@
+KIT DI PROVA PER LA MACCHINA PROTOTIPO (Dell PowerEdge R530)
+
+Cosa fa
+  Verifica che la macchina regga il carico del video server, usando una scheda video simulata.
+  Non serve nessuna scheda SDI. Non installa nulla e non modifica il sistema.
+
+Prima di iniziare
+  Fare un'immagine completa dei dischi originali, per poter ripristinare la macchina com'era.
+  Requisiti: Windows a 64 bit, versione 10 / Server 2016 o successiva.
+
+Passo 1 - Inventario (un minuto, sola lettura)
+  Tasto destro su inventario.ps1 > Esegui con PowerShell
+  oppure:  powershell -ExecutionPolicy Bypass -File inventario.ps1
+  Produce inventario.txt.
+
+Passo 2 - Prove (circa 6 minuti)
+  powershell -ExecutionPolicy Bypass -File esegui_prove.ps1 -Cartella D:\prove
+  Usare una cartella sul disco destinato alle registrazioni. Servono circa 6 GB liberi.
+  Produce rapporto_prove.txt.
+
+Cosa riportare
+  I due file inventario.txt e rapporto_prove.txt.
+
+Note
+  La cartella bin contiene le librerie FFmpeg (licenza LGPL), non modificate.
+  I file di prova restano nella cartella indicata e si possono cancellare a mano.

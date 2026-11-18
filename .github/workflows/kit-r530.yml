@@ -1,0 +1,91 @@
+# Compila il video server su Windows e produce kit-R530.zip, pronto da copiare sulla macchina di prova.
+# Parte a ogni push su main e a mano da Actions > "Kit R530" > Run workflow.
+name: Kit R530
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  SQLITE_URL: https://www.sqlite.org/2026/sqlite-amalgamation-3540100.zip
+  FFMPEG_ASSET: ffmpeg-n9.0-latest-win64-lgpl-shared-9.0.zip
+
+jobs:
+  kit:
+    runs-on: windows-latest
+    timeout-minutes: 45
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: SQLite
+        run: |
+          Invoke-WebRequest $env:SQLITE_URL -OutFile sqlite.zip
+          Expand-Archive sqlite.zip -DestinationPath sqlite-src
+          $dir = (Get-ChildItem sqlite-src -Directory | Select-Object -First 1).FullName
+          New-Item -ItemType Directory -Force vserver/third_party/sqlite | Out-Null
+          Copy-Item "$dir/sqlite3.c", "$dir/sqlite3.h" vserver/third_party/sqlite/
+
+      - name: FFmpeg (build LGPL shared)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $rel = Invoke-RestMethod -Headers @{ Authorization = "Bearer $env:GH_TOKEN" } https://api.github.com/repos/BtbN/FFmpeg-Builds/releases/latest
+          $asset = $rel.assets | Where-Object name -eq $env:FFMPEG_ASSET | Select-Object -First 1
+          if (-not $asset) { throw "FFmpeg $env:FFMPEG_ASSET non trovato nella release BtbN" }
+          Invoke-WebRequest $asset.browser_download_url -OutFile ffmpeg.zip
+          Expand-Archive ffmpeg.zip -DestinationPath ffmpeg
+          $root = (Get-ChildItem ffmpeg -Directory | Select-Object -First 1).FullName -replace '\\', '/'
+          "FFMPEG_ROOT=$root" | Out-File -Append $env:GITHUB_ENV
+          Get-ChildItem "$root/lib/*.lib" | Select-Object -ExpandProperty Name
+
+      - name: Compilazione
+        run: |
+          cmake -S vserver -B build -A x64 -DFFMPEG_ROOT="$env:FFMPEG_ROOT"
+          cmake --build build --config Release --parallel
+
+      - name: Test di base
+        run: ctest --test-dir build -C Release --output-on-failure
+
+      - name: Composizione del kit
+        run: |
+          $k = 'kit-R530'
+          New-Item -ItemType Directory -Force "$k/bin" | Out-Null
+          Copy-Item vserver/kit/* $k
+          foreach ($f in 'core_tests.exe', 'record_smoke.exe', 'play_smoke.exe', 'flow_smoke.exe') {
+            Copy-Item "build/Release/$f" "$k/bin"
+          }
+          Copy-Item build/Release/*.dll "$k/bin"
+          Copy-Item "$env:FFMPEG_ROOT/LICENSE.txt" "$k/bin/FFmpeg-LICENSE.txt" -ErrorAction SilentlyContinue
+          Get-ChildItem $k -Recurse -File | Select-Object FullName, Length | Format-Table -AutoSize
+
+      - name: Prova del kit su questo server (30 s)
+        run: |
+          powershell -ExecutionPolicy Bypass -File kit-R530/esegui_prove.ps1 -Cartella "$env:RUNNER_TEMP/prove" -Secondi 30
+          $r = Get-Content kit-R530/rapporto_prove.txt
+          Move-Item kit-R530/rapporto_prove.txt rapporto_prove_ci.txt
+          # Le prove a 2x e 3x e la velocita' del disco dipendono dal server di GitHub: non bloccano.
+          $essenziali = 'Logica di base', 'Registrazione 4 canali, 30 s', 'Riproduzione', 'Flusso completo'
+          $falliti = $r | Where-Object { $l = $_; ($essenziali | Where-Object { $l.StartsWith($_) }) -and $l -match 'FALLITO' }
+          if ($falliti) { $falliti; throw 'Prove essenziali fallite' }
+
+      - name: Pubblica il kit
+        uses: actions/upload-artifact@v4
+        with:
+          name: kit-R530
+          path: kit-R530
+          retention-days: 90
+
+      - name: Pubblica il rapporto della prova
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rapporto-prove-ci
+          path: rapporto_prove_ci.txt
+          if-no-files-found: ignore
